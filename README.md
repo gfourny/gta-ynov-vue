@@ -1,26 +1,4 @@
-# gta
+# gta-ynov-vue
 
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
+Programme du jeudi 08/11/2018:
+Préparer le projet gta-ynov-vue. Configurer un hébergement pour l'application web.
