@@ -25,10 +25,15 @@ new Vue({
   el:'#app',
   i18n,
 
-  data: {
-    email: '',
-    password: '',
-    status: '',
+  data() {
+    return {
+      email: '',
+      password: '',
+      status: '',
+      prenom: '',
+      nom: '',
+      adresse: ''
+    }
   }
 
 }).$mount("#app");

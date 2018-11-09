@@ -6,7 +6,7 @@
                     label-for="emailForm">
         <b-form-input id="emailInput"
                       type="email"
-                      v-model="form.email"
+                      v-model="$root.email"
                       required
                       placeholder="email">
         </b-form-input>
@@ -16,7 +16,7 @@
                     label-for="prenomForm">
         <b-form-input id="prenomInput"
                       type="text"
-                      v-model="form.prenom"
+                      v-model="$root.prenom"
                       required
                       placeholder="Entrer votre prénom">
         </b-form-input>
@@ -26,7 +26,7 @@
                     label-for="nomForm">
         <b-form-input id="nomInput"
                       type="text"
-                      v-model="form.nom"
+                      v-model="$root.nom"
                       required
                       placeholder="Entrer votre nom">
         </b-form-input>
@@ -36,7 +36,7 @@
                     label-for="adresseForm">
         <b-form-input id="adresseInput"
                       type="text"
-                      v-model="form.adresse"
+                      v-model="$root.adresse"
                       required
                       placeholder="Entrer votre adresse">
         </b-form-input>
@@ -46,7 +46,7 @@
                     label-for="Status">
           <b-form-input readonly id="status"
                         type="text"
-                        v-model="form.status">
+                        v-model="$root.status">
           </b-form-input>
       </b-form-group>
       <b-button type="submit" variant="primary">Valider</b-button>
@@ -62,13 +62,12 @@
   margin-left: 38%;
 }
 
-@media screen and (max-width: 600px){
-
-    .b-form-group {
-        display: inherit;
-        width: 80%;
-        margin-left: 9%;
-    }
+@media screen and (max-width: 600px) {
+  .b-form-group {
+    display: inherit;
+    width: 80%;
+    margin-left: 9%;
+  }
 }
 </style>
 
@@ -79,13 +78,6 @@ export default {
   name: "Profil",
   data() {
     return {
-      form: {
-        email: "",
-        prenom: "",
-        nom: "",
-        adresse: "",
-        status: ""
-      },
       show: true
     };
   },
