@@ -42,6 +42,12 @@ export default {
 
     methods:{
         SubmitButton: function(){
+            console.log(this.email);
+            console.log(this.password);
+            console.log(this.status);
+            this.$emit('email', this.email);
+            this.$emit('password', this.password);
+            this.$emit('status', this.status);
             this.$router.push('profil')
         }
     }

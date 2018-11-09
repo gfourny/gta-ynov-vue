@@ -4,6 +4,8 @@
       <router-link to="/">Home</router-link>
        | 
       <router-link to="/Profil">Profil</router-link>
+       | 
+       <router-link to="/Calendar">Agenda</router-link>
     </div>
     <router-view/>
   </div>
