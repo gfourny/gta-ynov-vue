@@ -61,6 +61,15 @@
   width: 25%;
   margin-left: 38%;
 }
+
+@media screen and (max-width: 600px){
+
+    .b-form-group {
+        display: inherit;
+        width: 80%;
+        margin-left: 9%;
+    }
+}
 </style>
 
 

@@ -3,16 +3,16 @@
         <form>
             <div class="form-group">
                 <label for="exampleInputEmail1">Email address</label>
-                <input type="email" v-model="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" style="width:25%; margin-left: 38%">
+                <input type="email" v-model="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" >
                 <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
             </div>
             <div class="form-group">
                 <label for="exampleInputPassword1">Password</label>
-                <input type="password" v-model="password" class="form-control" id="exampleInputPassword1" placeholder="Password" style="width:25%; margin-left: 38%">
+                <input type="password" v-model="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
             </div>
             <div class="form-group">
                 <label for="statusPersonne">Votre status</label>
-                <select class="form-control" style="width:25%; margin-left: 38%" v-model="status">
+                <select class="form-control" v-model="status">
                         <option disabled value="">Status</option>
                         <option>Salarié</option>
                         <option>Responsable d’équipe</option>
@@ -30,7 +30,18 @@
 
 <style scoped>
 .form-group{
-    display: initial;
+    display: inherit;
+    width:25%;
+    margin-left: 38%;
+}
+
+@media screen and (max-width: 600px){
+
+    .form-group {
+        display: inherit;
+        width: 80%;
+        margin-left: 9%;
+    }
 }
 </style>
 
