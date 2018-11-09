@@ -13,7 +13,7 @@ Le projet est lancé, début du développement front. Ajout d'une page de connex
 
 Programme du vendredi 09/11/2018:
 Le bouton submit doit renvoyer vers la page Profil. Cette page doit contenir les informations relative à la personne qui s'est connecté
-
+Ajout d'un calendrier dans une page dédié
 
 Application visible sur https://gfourny.github.io/
 
