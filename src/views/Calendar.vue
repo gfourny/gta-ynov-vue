@@ -19,9 +19,6 @@
 .form-group{
     display: none;
 }
-
-.btn-group{
-}
 </style>
 
 

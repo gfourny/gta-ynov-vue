@@ -28,6 +28,13 @@
     </div>
 </template>
 
+<style scoped>
+.form-group{
+    display: initial;
+}
+</style>
+
+
 <script>
 export default {
     name: "LoginPage",

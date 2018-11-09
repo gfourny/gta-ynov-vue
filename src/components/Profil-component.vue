@@ -55,10 +55,11 @@
     </div>
 </template>
 
-<style>
+<style scoped>
 .b-form-group {
-    width:25%;
-    margin-left: 38%
+  display: inherit;
+  width: 25%;
+  margin-left: 38%;
 }
 </style>
 
@@ -66,6 +67,7 @@
 
 <script>
 export default {
+  name: "Profil",
   data() {
     return {
       form: {
@@ -81,7 +83,7 @@ export default {
   methods: {
     onSubmit(evt) {
       evt.preventDefault();
-      this.$router.push('calendar')
+      this.$router.push("calendar");
     },
     onReset(evt) {
       evt.preventDefault();
