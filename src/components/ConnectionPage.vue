@@ -32,8 +32,17 @@
 export default {
     name: "LoginPage",
 
+    data: function() {
+       return {
+          email: '',
+          password: '',
+          status: ''
+        }
+    },
+
     methods:{
         SubmitButton: function(){
+            this.$router.push('profil')
         }
     }
 }

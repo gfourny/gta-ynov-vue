@@ -1,7 +1,6 @@
 <template>
   <div class="profil">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <ConnectionPage msg="Bienvenue sur votre profil"/>
+    <ProfilComponent msg="Bienvenue sur votre profil"/>
   </div>
 </template>
 
