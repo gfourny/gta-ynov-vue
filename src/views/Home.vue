@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <img alt="GTA" src="../assets/GTA.png">
+    <img alt="GTA" src="../assets/GTA-logo.png" style="width: 200px">
     <ConnectionPage msg="Welcome to Your Vue.js App"/>
   </div>
 </template>
