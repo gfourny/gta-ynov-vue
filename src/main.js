@@ -11,6 +11,8 @@ import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap-vue/dist/bootstrap-vue.css';
 import {messages} from 'vue-bootstrap-calendar';
 
+import dataManager from './DataManager.js';
+
 window.i18n = new VueI18n({
   locale: 'fr',
   messages
@@ -25,15 +27,6 @@ new Vue({
   el:'#app',
   i18n,
 
-  data() {
-    return {
-      email: '',
-      password: '',
-      status: '',
-      prenom: '',
-      nom: '',
-      adresse: ''
-    }
-  }
+  data : dataManager
 
 }).$mount("#app");

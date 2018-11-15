@@ -6,7 +6,7 @@
                     label-for="emailForm">
         <b-form-input id="emailInput"
                       type="email"
-                      v-model="$root.email"
+                      v-model="$root.profil.email"
                       required
                       placeholder="email">
         </b-form-input>
@@ -16,7 +16,7 @@
                     label-for="prenomForm">
         <b-form-input id="prenomInput"
                       type="text"
-                      v-model="$root.prenom"
+                      v-model="$root.profil.prenom"
                       required
                       placeholder="Entrer votre prénom">
         </b-form-input>
@@ -26,7 +26,7 @@
                     label-for="nomForm">
         <b-form-input id="nomInput"
                       type="text"
-                      v-model="$root.nom"
+                      v-model="$root.profil.nom"
                       required
                       placeholder="Entrer votre nom">
         </b-form-input>
@@ -36,7 +36,7 @@
                     label-for="adresseForm">
         <b-form-input id="adresseInput"
                       type="text"
-                      v-model="$root.adresse"
+                      v-model="$root.profil.adresse"
                       required
                       placeholder="Entrer votre adresse">
         </b-form-input>
@@ -55,7 +55,7 @@
                     label-for="Status">
           <b-form-input readonly id="status"
                         type="text"
-                        v-model="$root.status">
+                        v-model="$root.profil.status">
           </b-form-input>
       </b-form-group>
       <b-button type="submit" variant="primary">Valider</b-button>
