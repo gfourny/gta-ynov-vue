@@ -12,7 +12,7 @@ import 'bootstrap-vue/dist/bootstrap-vue.css';
 import {messages} from 'vue-bootstrap-calendar';
 
 window.i18n = new VueI18n({
-  locale: 'en',
+  locale: 'fr',
   messages
 });
 

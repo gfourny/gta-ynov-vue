@@ -31,7 +31,7 @@ import { messages } from "vue-bootstrap-calendar";
 Vue.use(VueI18n);
 
 window.i18n = new VueI18n({
-  locale: "en",
+  locale: "fr",
   messages
 });
 
