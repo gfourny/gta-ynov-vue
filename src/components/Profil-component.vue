@@ -41,6 +41,15 @@
                       placeholder="Entrer votre adresse">
         </b-form-input>
       </b-form-group>
+      <b-form-group id="naissanceForm"
+                    label="Date de naissance"
+                    label-for="naissanceForm">
+      <b-form-input class="form-control"
+                    type="date"
+                    value="2011-08-19"
+                    id="example-date-input">
+      </b-form-input>
+      </b-form-group>
       <b-form-group id="statusForm"
                     label="Status"
                     label-for="Status">
