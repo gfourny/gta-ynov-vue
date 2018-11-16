@@ -26,6 +26,7 @@ Le calendrier a été mis en français. Un fichier js DataManager.js a été cr�
 
 Programme du 16/11/2018
 Résoudre les erreurs bloquante (les inputs ne s'affichent plus). Le store doit être fonctionnel.
+Modifier le système d'agenda.
 
 Application visible sur https://gfourny.github.io/
 

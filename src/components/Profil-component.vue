@@ -6,7 +6,7 @@
                     label-for="emailForm">
         <b-form-input id="emailInput"
                       type="email"
-                      v-model="email"
+                      v-model="$root.user.mail"
                       required
                       placeholder="email">
         </b-form-input>
@@ -16,7 +16,7 @@
                     label-for="prenomForm">
         <b-form-input id="prenomInput"
                       type="text"
-                      v-model="prenom"
+                      v-model="$root.user.firstName"
                       required
                       placeholder="Entrer votre prénom">
         </b-form-input>
@@ -26,7 +26,7 @@
                     label-for="nomForm">
         <b-form-input id="nomInput"
                       type="text"
-                      v-model="nom"
+                      v-model="$root.user.lastName"
                       required
                       placeholder="Entrer votre nom">
         </b-form-input>
@@ -36,7 +36,7 @@
                     label-for="adresseForm">
         <b-form-input id="adresseInput"
                       type="text"
-                      v-model="adresse"
+                      v-model="$root.user.addresse.ville"
                       required
                       placeholder="Entrer votre adresse">
         </b-form-input>
@@ -46,7 +46,7 @@
                     label-for="naissanceForm">
       <b-form-input class="form-control"
                     type="date"
-                    v-model="dateNaissance"
+                    v-model="$root.user.ddn"
                     value="2011-08-19"
                     id="example-date-input">
       </b-form-input>
@@ -56,7 +56,7 @@
                     label-for="Status">
           <b-form-input readonly id="status"
                         type="text"
-                        v-model="status">
+                        v-model="$root.user.roles">
           </b-form-input>
       </b-form-group>
       <b-button type="submit" variant="primary">Valider</b-button>
@@ -88,13 +88,7 @@ export default {
   name: "Profil",
   data() {
     return {
-      show: true,
-      email: "",
-      nom: "",
-      prenom: "",
-      status: "",
-      adresse: "",
-      dateNaissance: ""
+      show: true
     };
   },
   methods: {
@@ -115,15 +109,6 @@ export default {
         this.show = true;
       });
     }
-  },
-
-  mounted() {
-    this.email = this.$root.user.mail
-    this.dateNaissance = this.$root.user.ddn
-    this.nom = this.$root.user.lastName
-    this.prenom = this.$root.user.firstName
-    this.status = this.$root.user.roles
-    this.adresse = this.$root.user.addresse.ville
   }
 };
 </script>
