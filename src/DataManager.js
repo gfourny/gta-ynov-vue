@@ -3,42 +3,6 @@ Data Manager
 */
 
 let roles = ['SALARIE', 'RESPONSABLE', 'DRH', 'ADMIN']
-let demandes = {
-  CONGE_PAYE : {
-    id : 'CONGE_PAYE',
-    title : 'Congé payé',
-    jourPayer : true,
-    dates : [
-      '2018-11-12'
-    ]
-  },
-  RECUPERATION : {
-    id : 'RECUPERATION',
-    title : 'Récupération',
-    jourPayer : true,
-    dates : [
-      '2018-11-13'
-    ]
-  },
-  AMENAGEMENT_HORAIRE : {
-    id : 'AMENAGEMENT_HORAIRE',
-    title : 'Aménagment d\'horaire',
-    jourPayer : true,
-    dates : [
-      '2018-11-14'
-    ]
-  }, 
-  ABSENCE : {
-    id : 'ABSENCE',
-    title : 'Absence',
-    jourPayer : false,
-    dates : [
-      '2018-11-15'
-    ]
-  }
-}
-
-let copy = obj => JSON.parse(JSON.stringify(obj))
 let getData = ()=> JSON.parse(localStorage.getItem('data'))
 let setData = a => localStorage.setItem('data', JSON.stringify(a))
 
@@ -106,36 +70,7 @@ let checkData = ()=> {
         contrats : [{
           dateDebut : "2018/11/08",
           dateFin : "2018-11-16",
-          demandes : [
-          {
-            id : 'CONGE_PAYE',
-            title : 'Congé payé',
-            jourPayer : true,
-            dates : [
-              '2018-11-12'
-            ]
-          },{
-            id : 'RECUPERATION',
-            title : 'Récupération',
-            jourPayer : true,
-            dates : [
-              '2018-11-13'
-            ]
-          },{
-            id : 'AMENAGEMENT_HORAIRE',
-            title : 'Aménagment d\'horaire',
-            jourPayer : true,
-            dates : [
-              '2018-11-14'
-            ]
-          },{
-            id : 'ABSENCE',
-            title : 'Absence',
-            jourPayer : false,
-            dates : [
-              '2018-11-15'
-            ]
-          }]
+          demandes : []
         }]
       }]
     })
@@ -190,5 +125,4 @@ export default {
     }
     return usersfind
   }
-
 }

@@ -28,5 +28,9 @@ Programme du 16/11/2018
 Résoudre les erreurs bloquante (les inputs ne s'affichent plus). Le store doit être fonctionnel.
 Modifier le système d'agenda.
 
+Fin de journée du 16/11/2018
+Les erreurs de data on été traitées. Le store est désormais fonctionnel et le module de connexion aussi.
+Le calendrier a été supprimé et remplacé par un choix par demi-journée avec sélection de la semaine.
+
 Application visible sur https://gfourny.github.io/
 

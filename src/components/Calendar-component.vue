@@ -5,9 +5,7 @@
         </div>
         <div class="row">
             <div class="col-sm">
-                <b-input-group class="jour" size="lg" prepend="Lundi" append="heures">
-                    <b-form-input></b-form-input>
-                </b-input-group>
+               Lundi matin
             </div>
             <div class="col-sm">
                 <b-form-radio-group id="btnradiosLundi"
@@ -19,12 +17,8 @@
                           name="radioBtnOutline"
                           class="typeJour" />
             </div>
-        </div>
-        <div class="row">
             <div class="col-sm">
-                <b-input-group class="jour" size="lg" prepend="Mardi" append="heures">
-                    <b-form-input></b-form-input>
-                </b-input-group>
+                Lundi après-midi
             </div>
             <div class="col-sm">
                 <b-form-radio-group id="btnradiosMardi"
@@ -39,9 +33,20 @@
         </div>
         <div class="row">
             <div class="col-sm">
-                <b-input-group class="jour" size="lg" prepend="Mercredi" append="heures">
-                    <b-form-input></b-form-input>
-                </b-input-group>
+                Mardi matin
+            </div>
+            <div class="col-sm">
+                <b-form-radio-group id="btnradiosMardi"
+                          buttons
+                          button-variant="outline-primary"
+                          size="lg"
+                          v-model="mardiSelected"
+                          :options="options"
+                          name="radioBtnOutline"
+                          class="typeJour" />
+            </div>
+            <div class="col-sm">
+                Mardi après-midi
             </div>
             <div class="col-sm">
                 <b-form-radio-group id="btnradiosMercredi"
@@ -56,9 +61,7 @@
         </div>
         <div class="row">
             <div class="col-sm">
-                <b-input-group class="jour" size="lg" prepend="Jeudi" append="heures">
-                    <b-form-input></b-form-input>
-                </b-input-group>
+                Mercredi matin
             </div>
             <div class="col-sm">
                 <b-form-radio-group id="btnradiosJeudi"
@@ -70,12 +73,8 @@
                           name="radioBtnOutline"
                           class="typeJour" />
             </div>
-        </div>
-        <div class="row">
             <div class="col-sm">
-                <b-input-group class="jour" size="lg" prepend="Vendredi" append="heures">
-                    <b-form-input></b-form-input>
-                </b-input-group>
+                Mercredi après-midi
             </div>
             <div class="col-sm">
                 <b-form-radio-group id="btnradiosVendredi"
@@ -88,19 +87,70 @@
                           class="typeJour" />
             </div>
         </div>
+        <div class="row">
+            <div class="col-sm">
+                Jeudi matin
+            </div>
+            <div class="col-sm">
+                <b-form-radio-group id="btnradiosJeudi"
+                          buttons
+                          button-variant="outline-primary"
+                          size="lg"
+                          v-model="jeudiSelected"
+                          :options="options"
+                          name="radioBtnOutline"
+                          class="typeJour" />
+            </div>
+            <div class="col-sm">
+                Jeudi après-midi
+            </div>
+            <div class="col-sm">
+                <b-form-radio-group id="btnradiosVendredi"
+                          buttons
+                          button-variant="outline-primary"
+                          size="lg"
+                          v-model="vendrediSelected"
+                          :options="options"
+                          name="radioBtnOutline"
+                          class="typeJour" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                Vendredi matin
+            </div>
+            <div class="col-sm">
+                <b-form-radio-group id="btnradiosJeudi"
+                          buttons
+                          button-variant="outline-primary"
+                          size="lg"
+                          v-model="jeudiSelected"
+                          :options="options"
+                          name="radioBtnOutline"
+                          class="typeJour" />
+            </div>
+            <div class="col-sm">
+                Vendredi après-midi
+            </div>
+            <div class="col-sm">
+                <b-form-radio-group id="btnradiosVendredi"
+                          buttons
+                          button-variant="outline-primary"
+                          size="lg"
+                          v-model="vendrediSelected"
+                          :options="options"
+                          name="radioBtnOutline"
+                          class="typeJour" />
+            </div>
+        </div>
+        <br/>
         <b-button class="submitButton" type="submit" variant="primary">Enregistrer</b-button>
     </div>
 </template>
 
 <style scoped >
-.jour {
-  width: 50%;
-  margin-left: 20%;
-  margin-top: 3%;
-}
-
 .typeJour {
-  margin-left: 12px;
+  margin-left: 1px;
   margin-top: 3%;
 }
 
@@ -108,11 +158,11 @@
     margin-left: 38%
 }
 
+.row {
+    margin-top: 3%;
+}
+
 @media screen and (max-width: 600px) {
-  .jour {
-    width: 90%;
-    margin-left:4%
-  }
 
   .typeJour {
     margin-top: 3%;
