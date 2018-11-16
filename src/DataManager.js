@@ -51,7 +51,7 @@ let checkData = ()=> {
         pseudo : "Admin",
         firstName : "Guillaume",
         lastName : "Fourny",
-        ddn : "1195-10-14",
+        ddn : "1995-10-14",
         tel : "06 32 17 14 05",
         addresse : {
           cp : "44800",
@@ -68,6 +68,27 @@ let checkData = ()=> {
         }]
       },{
         id : 1,
+        password : "Password01",
+        pseudo : "gfourny",
+        firstName : "Guillaume",
+        lastName : "Fourny",
+        ddn : "1995-10-14",
+        tel : "06 32 17 14 05",
+        addresse : {
+          cp : "44800",
+          ville : "St Herblain",
+          rue : "XX rue de la rue",
+          complement : "6eme etage"
+        },
+        mail : "gfourny@domain.com",
+        roles : ['SALARIE', 'RESPONSABLE', 'DRH', 'ADMIN'],
+        contrats : [{
+          dateDebut : "2018-11-08",
+          dateFin : "2018-11-16",
+          demandes : []
+        }]
+      },{
+        id : 2,
         password : "Password01",
         pseudo : "thenry",
         firstName : "Thierry",
