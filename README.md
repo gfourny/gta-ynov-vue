@@ -24,5 +24,8 @@ Ajouter d'un store. Mettre le calendrier en français. Créer des utilisateurs.
 Fin de journée du 15/11/2018:
 Le calendrier a été mis en français. Un fichier js DataManager.js a été créé. Il servira de stockage des données. Des utilisateurs ont été créé dans le store mais pas encore fonctionnel au travers de l'application.
 
+Programme du 16/11/2018
+Résoudre les erreurs bloquante (les inputs ne s'affichent plus). Le store doit être fonctionnel.
+
 Application visible sur https://gfourny.github.io/
 
