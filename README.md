@@ -32,5 +32,8 @@ Fin de journée du 16/11/2018
 Les erreurs de data on été traitées. Le store est désormais fonctionnel et le module de connexion aussi.
 Le calendrier a été supprimé et remplacé par un choix par demi-journée avec sélection de la semaine.
 
+Programme du 22/11/2018
+Corriger les id pour la sélection du type de demi-journée. Enregistrer les valeurs pour la semaine sélectionné
+
 Application visible sur https://gfourny.github.io/
 

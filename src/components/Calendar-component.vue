@@ -8,11 +8,11 @@
                Lundi matin
             </div>
             <div class="col-sm">
-                <b-form-radio-group id="btnradiosLundi"
+                <b-form-radio-group id="btnradiosLundiAM"
                           buttons
                           button-variant="outline-primary"
                           size="lg"
-                          v-model="lundiSelected"
+                          v-model="lundiAMSelected"
                           :options="options"
                           name="radioBtnOutline"
                           class="typeJour" />
@@ -21,11 +21,11 @@
                 Lundi après-midi
             </div>
             <div class="col-sm">
-                <b-form-radio-group id="btnradiosMardi"
+                <b-form-radio-group id="btnradiosLundiPM"
                           buttons
                           button-variant="outline-primary"
                           size="lg"
-                          v-model="mardiSelected"
+                          v-model="lundiPMSelected"
                           :options="options"
                           name="radioBtnOutline"
                           class="typeJour" />
@@ -36,11 +36,11 @@
                 Mardi matin
             </div>
             <div class="col-sm">
-                <b-form-radio-group id="btnradiosMardi"
+                <b-form-radio-group id="btnradiosMardiAM"
                           buttons
                           button-variant="outline-primary"
                           size="lg"
-                          v-model="mardiSelected"
+                          v-model="mardiAMSelected"
                           :options="options"
                           name="radioBtnOutline"
                           class="typeJour" />
@@ -49,11 +49,11 @@
                 Mardi après-midi
             </div>
             <div class="col-sm">
-                <b-form-radio-group id="btnradiosMercredi"
+                <b-form-radio-group id="btnradiosMardiPM"
                           buttons
                           button-variant="outline-primary"
                           size="lg"
-                          v-model="mercrediSelected"
+                          v-model="mardiPMSelected"
                           :options="options"
                           name="radioBtnOutline"
                           class="typeJour" />
@@ -64,11 +64,11 @@
                 Mercredi matin
             </div>
             <div class="col-sm">
-                <b-form-radio-group id="btnradiosJeudi"
+                <b-form-radio-group id="btnradiosMercrediAM"
                           buttons
                           button-variant="outline-primary"
                           size="lg"
-                          v-model="jeudiSelected"
+                          v-model="mercrediAMSelected"
                           :options="options"
                           name="radioBtnOutline"
                           class="typeJour" />
@@ -77,11 +77,11 @@
                 Mercredi après-midi
             </div>
             <div class="col-sm">
-                <b-form-radio-group id="btnradiosVendredi"
+                <b-form-radio-group id="btnradiosMercrediPM"
                           buttons
                           button-variant="outline-primary"
                           size="lg"
-                          v-model="vendrediSelected"
+                          v-model="mercrediPMSelected"
                           :options="options"
                           name="radioBtnOutline"
                           class="typeJour" />
@@ -92,11 +92,11 @@
                 Jeudi matin
             </div>
             <div class="col-sm">
-                <b-form-radio-group id="btnradiosJeudi"
+                <b-form-radio-group id="btnradiosJeudiAM"
                           buttons
                           button-variant="outline-primary"
                           size="lg"
-                          v-model="jeudiSelected"
+                          v-model="jeudiAMSelected"
                           :options="options"
                           name="radioBtnOutline"
                           class="typeJour" />
@@ -105,11 +105,11 @@
                 Jeudi après-midi
             </div>
             <div class="col-sm">
-                <b-form-radio-group id="btnradiosVendredi"
+                <b-form-radio-group id="btnradiosJeudiPM"
                           buttons
                           button-variant="outline-primary"
                           size="lg"
-                          v-model="vendrediSelected"
+                          v-model="jeudiPMSelected"
                           :options="options"
                           name="radioBtnOutline"
                           class="typeJour" />
@@ -120,11 +120,11 @@
                 Vendredi matin
             </div>
             <div class="col-sm">
-                <b-form-radio-group id="btnradiosJeudi"
+                <b-form-radio-group id="btnradiosVendrediAM"
                           buttons
                           button-variant="outline-primary"
                           size="lg"
-                          v-model="jeudiSelected"
+                          v-model="vendrediAMSelected"
                           :options="options"
                           name="radioBtnOutline"
                           class="typeJour" />
@@ -133,11 +133,11 @@
                 Vendredi après-midi
             </div>
             <div class="col-sm">
-                <b-form-radio-group id="btnradiosVendredi"
+                <b-form-radio-group id="btnradiosVendrediPM"
                           buttons
                           button-variant="outline-primary"
                           size="lg"
-                          v-model="vendrediSelected"
+                          v-model="vendrediPMSelected"
                           :options="options"
                           name="radioBtnOutline"
                           class="typeJour" />
@@ -185,11 +185,16 @@ export default {
     return {
       show: true,
       currentPage: 45,
-      lundiSelected: "present",
-      mardiSelected:"present",
-      mercrediSelected:"present",
-      jeudiSelected:"present",
-      vendrediSelected:"present",
+      lundiAMSelected: "present",
+      lundiPMSelected: "present",
+      mardiAMSelected:"present",
+      mardiPMSelected:"present",
+      mercrediAMSelected:"present",
+      mercrediPMSelected:"present",
+      jeudiAMSelected:"present",
+      jeudiPMSelected:"present",
+      vendrediAMSelected:"present",
+      vendrediPMSelected:"present",
       options: [
         { text: "Présent", value: "present" },
         { text: "CA", value: "CA" },
