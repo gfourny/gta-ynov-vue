@@ -55,31 +55,31 @@ let checkData = () => {
           {
             "lundi": {
               "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "mardi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "mercredi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "jeudi": {
+              "crenau1": 8,
               "crenau2": 17,
               "pause": 1,
               "abscence": "CA"
             },
-            "mardi": {
-              "crenau1": 8,
-              "crenau2": 16,
-              "pause": 1,
-              "abscence": "CA"
-            },
-            "mercredi": {
-              "crenau1": 10,
-              "crenau2": 18,
-              "pause": 1,
-              "abscence": "CA"
-            },
-            "jeudi": {
-              "crenau1": 9,
-              "crenau2": 18,
-              "pause": 1,
-              "abscence": "CA"
-            },
             "vendredi": {
-              "crenau1": 9,
-              "crenau2": 15,
+              "crenau1": 8,
+              "crenau2": 17,
               "pause": 1,
               "abscence": "RTT"
             }
@@ -109,7 +109,45 @@ let checkData = () => {
           dateDebut: "2018/11/08",
           dateFin: "2018-11-16",
           demandes: []
-        }]
+        }],
+        planning: [
+          {
+            "lundi": {
+              "crenau1": 8,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "mardi": {
+              "crenau1": 8,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "mercredi": {
+              "crenau1": 8,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "jeudi": {
+              "crenau1": 8,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "vendredi": {
+              "crenau1": 8,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "RTT"
+            }
+          },
+        ],
+        "conge": {
+          "CA": 3,
+          "RTT": 0
+        },
       }]
     })
   }

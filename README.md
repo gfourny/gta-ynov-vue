@@ -35,5 +35,8 @@ Le calendrier a été supprimé et remplacé par un choix par demi-journée avec
 Programme du 22/11/2018
 Corriger les id pour la sélection du type de demi-journée. Enregistrer les valeurs pour la semaine sélectionné
 
+Fin de journée du 22/11/2018
+Changement de page agenda, enregistrement des horaires et type de journée fonctionnel.
+
 Application visible sur https://gfourny.github.io/
 
