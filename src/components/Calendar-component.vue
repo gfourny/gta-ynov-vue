@@ -1,200 +1,262 @@
 <template>
-    <div class="Agenda">
-        <div class="semaine">
-            <b-pagination-nav :link-gen="linkGen" :number-of-pages="52" v-model="currentPage" class="semaineSelected"/>
-        </div>
-        <div class="row">
-            <div class="col-sm">
-               Lundi matin
-            </div>
-            <div class="col-sm">
-                <b-form-radio-group id="btnradiosLundiAM"
+<div class="Agenda">
+  <b-row class="justify-content-center">
+    <b-pagination-nav :link-gen="linkGen" :number-of-pages="52" v-model="currentPage"/>
+  </b-row>
+
+  <h3 class="mt-4">Semaine {{currentPage}}</h3>
+  <b-container>
+  <b-form>
+   
+      <b-form-group id="day1inputgroup"
+                    label="Lundi:"
+                    label-for="day1input">
+
+        <b-row class="justify-content-center">
+          <b-col cols="4" md="2" >
+          <b-form-input id="day1input"
+                        placeholder="Matin"
+                        type="number"
+                        v-model="user.planning[currentPage-1].lundi.crenau1"
+                        required>
+          </b-form-input>
+          </b-col>
+
+          <b-col cols="4" md="2">
+          <b-form-input id="day1input2"
+                        placeholder="Après-midi"
+                        type="number"
+                        v-model="user.planning[currentPage-1].lundi.crenau2"
+                        required>
+          </b-form-input>
+          </b-col>
+
+          <b-col cols="4" md="1">
+          <b-form-input id="day1input2"
+                        placeholder="Déjeuner"
+                        type="number"
+                        v-model="user.planning[currentPage-1].lundi.pause"
+                        required>
+          </b-form-input>
+          </b-col>
+
+          <b-col cols="12" md="3">
+            
+              <b-form-radio-group id="btnradios2"
+                            buttons
+                            button-variant="outline-primary"
+                            size="md"
+                            v-model="user.planning[currentPage-1].lundi.abscence"
+                            :options="options"
+                            name="radioBtnOutline" />
+          </b-col>
+
+          <b-col>
+              <p>Heures effectives : {{user.planning[currentPage-1].lundi.crenau2 - user.planning[currentPage-1].lundi.crenau1 - user.planning[currentPage-1].lundi.pause}}</p>
+          </b-col>
+        </b-row>
+      </b-form-group>
+
+
+      <b-form-group id="day2inputgroup"
+                    label="Mardi:"
+                    label-for="day1input">
+      <b-row class="justify-content-center">
+        <b-col cols="4" md="2">
+        <b-form-input id="day2input"
+                      placeholder="Matin"
+                      type="number"
+                      v-model="user.planning[currentPage-1].mardi.crenau1"
+                      required>
+        </b-form-input>
+        </b-col>
+        <b-col cols="4" md="2">
+        <b-form-input id="day2input2"
+                      placeholder="Après-midi"
+                      type="number"
+                      v-model="user.planning[currentPage-1].mardi.crenau2"
+                      required>
+        </b-form-input>
+        </b-col>
+        <b-col cols="4" md="1">
+          <b-form-input id="day1input2"
+                        placeholder="Déjeuner"
+                        type="number"
+                        v-model="user.planning[currentPage-1].mardi.pause"
+                        required>
+          </b-form-input>
+          </b-col>
+        <b-col cols="12" md="3">
+          
+            <b-form-radio-group id="btnradios2"
                           buttons
                           button-variant="outline-primary"
-                          size="lg"
-                          v-model="lundiAMSelected"
+                          size="md"
+                          v-model="user.planning[currentPage-1].mardi.abscence"
                           :options="options"
-                          name="radioBtnOutline"
-                          class="typeJour" />
-            </div>
-            <div class="col-sm">
-                Lundi après-midi
-            </div>
-            <div class="col-sm">
-                <b-form-radio-group id="btnradiosLundiPM"
+                          name="radioBtnOutline" />
+        </b-col>
+        <b-col>
+              <p>Heures effectives : {{user.planning[currentPage-1].mardi.crenau2 - user.planning[currentPage-1].mardi.crenau1 - user.planning[currentPage-1].mardi.pause}}</p>
+          </b-col>
+        </b-row>
+      </b-form-group>
+      <b-form-group id="day3inputgroup"
+                    label="Mercredi:"
+                    label-for="day1input">
+      <b-row class="justify-content-center">
+        <b-col cols="4" md="2">
+        <b-form-input id="day3input"
+                      placeholder="Matin"
+                      type="number"
+                      v-model="user.planning[currentPage-1].mercredi.crenau1"
+                      required>
+        </b-form-input>
+        </b-col>
+        <b-col cols="4" md="2">
+        <b-form-input id="day3input2"
+                      placeholder="Après-midi"
+                      type="number"
+                      v-model="user.planning[currentPage-1].mercredi.crenau2"
+                      required>
+        </b-form-input>
+        </b-col>
+        <b-col cols="4" md="1">
+          <b-form-input id="day1input2"
+                        placeholder="Déjeuner"
+                        type="number"
+                        v-model="user.planning[currentPage-1].mercredi.pause"
+                        required>
+          </b-form-input>
+          </b-col>
+        <b-col cols="12" md="3">
+          
+            <b-form-radio-group id="btnradios2"
                           buttons
                           button-variant="outline-primary"
-                          size="lg"
-                          v-model="lundiPMSelected"
+                          size="md"
+                          v-model="user.planning[currentPage-1].mercredi.abscence"
                           :options="options"
-                          name="radioBtnOutline"
-                          class="typeJour" />
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm">
-                Mardi matin
-            </div>
-            <div class="col-sm">
-                <b-form-radio-group id="btnradiosMardiAM"
+                          name="radioBtnOutline" />
+        </b-col>
+        <b-col>
+              <p>Heures effectives : {{user.planning[currentPage-1].mercredi.crenau2 - user.planning[currentPage-1].mercredi.crenau1 - user.planning[currentPage-1].mercredi.pause}}</p>
+          </b-col>
+        </b-row>
+      </b-form-group>
+      <b-form-group id="day4inputgroup"
+                    label="Jeudi:"
+                    label-for="day1input">
+      <b-row class="justify-content-center">
+        <b-col cols="4" md="2">
+        <b-form-input id="day4input"
+                      placeholder="Matin"
+                      type="number"
+                      v-model="user.planning[currentPage-1].jeudi.crenau1"
+                      required>
+        </b-form-input>
+        </b-col>
+        <b-col cols="4" md="2">
+        <b-form-input id="day4input2"
+                      placeholder="Après-midi"
+                      type="number"
+                      v-model="user.planning[currentPage-1].jeudi.crenau2"
+                      required>
+        </b-form-input>
+        </b-col>
+        <b-col cols="4" md="1">
+          <b-form-input id="day1input2"
+                        placeholder="Déjeuner"
+                        type="number"
+                        v-model="user.planning[currentPage-1].jeudi.pause"
+                        required>
+          </b-form-input>
+          </b-col>
+        <b-col cols="12" md="3">
+          
+            <b-form-radio-group id="btnradios2"
                           buttons
                           button-variant="outline-primary"
-                          size="lg"
-                          v-model="mardiAMSelected"
+                          size="md"
+                          v-model="user.planning[currentPage-1].jeudi.abscence"
                           :options="options"
-                          name="radioBtnOutline"
-                          class="typeJour" />
-            </div>
-            <div class="col-sm">
-                Mardi après-midi
-            </div>
-            <div class="col-sm">
-                <b-form-radio-group id="btnradiosMardiPM"
+                          name="radioBtnOutline" />
+        </b-col>
+        <b-col>
+              <p>Heures effectives : {{user.planning[currentPage-1].jeudi.crenau2 - user.planning[currentPage-1].jeudi.crenau1 - user.planning[currentPage-1].jeudi.pause}}</p>
+          </b-col>
+        </b-row>
+      </b-form-group>
+      <b-form-group id="day4inputgroup"
+                    label="Vendredi:"
+                    label-for="day1input">
+      <b-row class="justify-content-center">
+        <b-col cols="4" md="2">
+        <b-form-input id="day4input"
+                      placeholder="Matin"
+                      type="number"
+                      v-model="user.planning[currentPage-1].vendredi.crenau1"
+                      required>
+        </b-form-input>
+        </b-col>
+        <b-col cols="4" md="2">
+        <b-form-input id="day4input2"
+                      placeholder="Après-midi"
+                      type="number"
+                      v-model="user.planning[currentPage-1].vendredi.crenau2"
+                      required>
+        </b-form-input>
+        </b-col>
+        <b-col cols="4" md="1">
+          <b-form-input id="day1input2"
+                        placeholder="Déjeuner"
+                        type="number"
+                        v-model="user.planning[currentPage-1].vendredi.pause"
+                        required>
+          </b-form-input>
+          </b-col>
+        <b-col cols="12" md="3">
+          
+            <b-form-radio-group id="btnradios2"
                           buttons
                           button-variant="outline-primary"
-                          size="lg"
-                          v-model="mardiPMSelected"
+                          size="md"
+                          v-model="user.planning[currentPage-1].vendredi.abscence"
                           :options="options"
-                          name="radioBtnOutline"
-                          class="typeJour" />
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm">
-                Mercredi matin
-            </div>
-            <div class="col-sm">
-                <b-form-radio-group id="btnradiosMercrediAM"
-                          buttons
-                          button-variant="outline-primary"
-                          size="lg"
-                          v-model="mercrediAMSelected"
-                          :options="options"
-                          name="radioBtnOutline"
-                          class="typeJour" />
-            </div>
-            <div class="col-sm">
-                Mercredi après-midi
-            </div>
-            <div class="col-sm">
-                <b-form-radio-group id="btnradiosMercrediPM"
-                          buttons
-                          button-variant="outline-primary"
-                          size="lg"
-                          v-model="mercrediPMSelected"
-                          :options="options"
-                          name="radioBtnOutline"
-                          class="typeJour" />
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm">
-                Jeudi matin
-            </div>
-            <div class="col-sm">
-                <b-form-radio-group id="btnradiosJeudiAM"
-                          buttons
-                          button-variant="outline-primary"
-                          size="lg"
-                          v-model="jeudiAMSelected"
-                          :options="options"
-                          name="radioBtnOutline"
-                          class="typeJour" />
-            </div>
-            <div class="col-sm">
-                Jeudi après-midi
-            </div>
-            <div class="col-sm">
-                <b-form-radio-group id="btnradiosJeudiPM"
-                          buttons
-                          button-variant="outline-primary"
-                          size="lg"
-                          v-model="jeudiPMSelected"
-                          :options="options"
-                          name="radioBtnOutline"
-                          class="typeJour" />
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm">
-                Vendredi matin
-            </div>
-            <div class="col-sm">
-                <b-form-radio-group id="btnradiosVendrediAM"
-                          buttons
-                          button-variant="outline-primary"
-                          size="lg"
-                          v-model="vendrediAMSelected"
-                          :options="options"
-                          name="radioBtnOutline"
-                          class="typeJour" />
-            </div>
-            <div class="col-sm">
-                Vendredi après-midi
-            </div>
-            <div class="col-sm">
-                <b-form-radio-group id="btnradiosVendrediPM"
-                          buttons
-                          button-variant="outline-primary"
-                          size="lg"
-                          v-model="vendrediPMSelected"
-                          :options="options"
-                          name="radioBtnOutline"
-                          class="typeJour" />
-            </div>
-        </div>
-        <br/>
-        <b-button class="submitButton" type="submit" variant="primary">Enregistrer</b-button>
-    </div>
+                          name="radioBtnOutline" />
+        </b-col>
+        <b-col>
+              <p>Heures effectives : {{user.planning[currentPage-1].vendredi.crenau2 - user.planning[currentPage-1].vendredi.crenau1 - user.planning[currentPage-1].vendredi.pause}}</p>
+          </b-col>
+        </b-row>
+      </b-form-group>
+    
+    <b-button type="submit" variant="primary" v-on:click="submit">Enregistrer</b-button>
+  </b-form>
+  <b-row class="justify-content-center">
+    
+    <b-col>
+      <p>CA disponnibles : {{user.conge.CA}}</p>   
+    </b-col>
+    <b-col>
+      <p>RTT disponnibles : {{user.conge.RTT}}</p>
+    </b-col>
+  </b-row>
+  </b-container>
+</div>
 </template>
-
-<style scoped >
-.typeJour {
-  margin-left: 1px;
-  margin-top: 3%;
-}
-
-.semaineSelected {
-    margin-left: 38%
-}
-
-.row {
-    margin-top: 3%;
-}
-
-@media screen and (max-width: 600px) {
-
-  .typeJour {
-    margin-top: 3%;
-  }
-
-  .submitButton {
-      margin-top: 3%
-  }
-
-  .semaineSelected {
-    margin-left: 18%
-}
-}
-</style>
 
 <script>
 export default {
-  name: "Agenda",
+    name: "Agenda",
+  created: function() {
+    console.log("profil created");
+    this.user = this.$root.getLoggedUser();
+  },
   data() {
     return {
-      show: true,
-      currentPage: 45,
-      lundiAMSelected: "present",
-      lundiPMSelected: "present",
-      mardiAMSelected:"present",
-      mardiPMSelected:"present",
-      mercrediAMSelected:"present",
-      mercrediPMSelected:"present",
-      jeudiAMSelected:"present",
-      jeudiPMSelected:"present",
-      vendrediAMSelected:"present",
-      vendrediPMSelected:"present",
+      user: {},
+      currentPage: 1,
       options: [
         { text: "Présent", value: "present" },
         { text: "CA", value: "CA" },
@@ -205,9 +267,11 @@ export default {
   methods: {
     linkGen(pageNum) {
       return "#semaine/" + pageNum;
+    },
+
+    submit: function(){
+        this.$root.saveUser(this.user);
     }
   }
 };
 </script>
-
-
