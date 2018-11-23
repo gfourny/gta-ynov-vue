@@ -231,9 +231,9 @@
         </b-row>
       </b-form-group>
     
-    <b-button type="submit" variant="primary" v-on:click="submit">Enregistrer</b-button>
+    <b-button id="submitButton" type="submit" variant="primary" v-on:click="submit">Enregistrer</b-button>
   </b-form>
-  <b-row class="justify-content-center">
+  <b-row class="justify-content-center" id="resumeTypeNumber">
     
     <b-col>
       <p>CA disponnibles : {{user.conge.CA}}</p>   
@@ -245,28 +245,65 @@
   </b-container>
   <b-form-group id="totalHeureGroup"
                     label="Nombre d'heure par semaine :"
-                    label-for="totalHeure">
+                    label-for="totalHeure"
+                    class="totalHeureGroup">
         <b-form-input id="totalHeure"
                       type="text"
                       v-model="totalHeure"
-                      readonly>
+                      readonly
+                      style="text-align: center">
         </b-form-input>
       </b-form-group>
 </div>
 </template>
 
+<style>
+.totalHeureGroup {
+  width: 20%;
+  margin-left: 40%;
+  text-align: center;
+}
+
+#submitButton {
+  margin-top: 3%;
+}
+
+@media screen and (max-width: 600px) {
+  .totalHeureGroup {
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  #btnradios2 {
+    margin-top: 3%;
+  }
+
+  #submitButton {
+    margin-top: 0%;
+  }
+
+  #resumeTypeNumber {
+    margin-top: 3%
+  }
+}
+</style>
+
+
 <script>
 export default {
-    name: "Agenda",
+  name: "Agenda",
   created: function() {
     console.log("profil created");
     this.user = this.$root.getLoggedUser();
-    this.totalHeure = this.$root.countTotalHour(this.user, this.currentPage - 1);
+    this.totalHeure = this.$root.countTotalHour(
+      this.user,
+      this.currentPage - 1
+    );
   },
   data() {
     return {
       user: {},
-      totalHeure: '',
+      totalHeure: "",
       currentPage: 1,
       options: [
         { text: "Présent", value: "present" },
@@ -280,9 +317,12 @@ export default {
       return "#semaine/" + pageNum;
     },
 
-    submit: function(){
-        this.$root.saveUser(this.user);
-        this.totalHeure = this.$root.countTotalHour(this.user, this.currentPage - 1);
+    submit: function() {
+      this.$root.saveUser(this.user);
+      this.totalHeure = this.$root.countTotalHour(
+        this.user,
+        this.currentPage - 1
+      );
     }
   }
 };
