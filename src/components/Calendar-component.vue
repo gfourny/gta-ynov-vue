@@ -323,6 +323,8 @@ export default {
         this.user,
         this.currentPage - 1
       );
+
+      this.$router.push("calendar");
     }
   }
 };

@@ -44,6 +44,7 @@ Changement de page agenda, enregistrement des horaires et type de journée fonct
 
 Programme du 23/11/2018
 Modifier l'affichage de la page agenda. Afficher le nombre d'heure par semaine.
+Enregistrer les données des différentes semaines dans le localStorage.
 
 Application visible sur https://gfourny.github.io/
 
