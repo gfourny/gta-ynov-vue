@@ -13,15 +13,15 @@ let checkData = () => {
         id: 0,
         password: "admin",
         pseudo: "Admin",
-        firstName: "Guillaume",
-        lastName: "Fourny",
-        ddn: "1995-10-14",
-        tel: "06 32 17 14 05",
+        firstName: "Administrator",
+        lastName: "Admin",
+        ddn: "1980-10-14",
+        tel: "06 32 33 26 05",
         addresse: {
-          cp: "44800",
-          ville: "St Herblain",
+          cp: "44000",
+          ville: "Nantes",
           rue: "XX rue de la rue",
-          complement: "6eme etage"
+          complement: "RDC"
         },
         mail: "admin@domain.com",
         roles: ['SALARIE', 'RESPONSABLE', 'DRH', 'ADMIN'],
@@ -45,7 +45,7 @@ let checkData = () => {
           complement: "6eme etage"
         },
         mail: "gfourny@domain.com",
-        roles: ['SALARIE', 'RESPONSABLE', 'DRH', 'ADMIN'],
+        roles: ['SALARIE'],
         contrats: [{
           dateDebut: "2018-11-08",
           dateFin: "2018-11-16",

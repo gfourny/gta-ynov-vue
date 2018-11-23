@@ -6,6 +6,8 @@
       <router-link to="/Profil">Profil</router-link>
        | 
        <router-link to="/Calendar">Agenda</router-link>
+
+       <b-button id="logout" variant="danger" v-on:click="logout">Déconnexion</b-button>
     </div>
     <router-view/>
   </div>
@@ -28,5 +30,29 @@
       color: #42b983;
     }
   }
+
+  margin-left: 7%
+}
+
+#logout {
+  float: right;
+}
+
+@media screen and (max-width: 600px) {
+  #logout{
+    width: 40%
+  }
 }
 </style>
+
+<script>
+export default {
+  methods: {
+    logout: function() {
+      this.$root.logout();
+      this.$router.push('/')
+    }
+  }
+};
+</script>
+

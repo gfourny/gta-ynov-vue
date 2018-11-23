@@ -1,10 +1,10 @@
 <template>
 <div class="Agenda">
   <b-row class="justify-content-center">
-    <b-pagination-nav :link-gen="linkGen" :number-of-pages="52" v-model="currentPage"/>
+    <b-pagination-nav :link-gen="linkGen" :number-of-pages="52" v-model="semaine"/>
   </b-row>
 
-  <h3 class="mt-4">Semaine {{currentPage}}</h3>
+  <h3 class="mt-4">Semaine {{semaine}}</h3>
   <b-container>
   <b-form>
    
@@ -17,7 +17,7 @@
           <b-form-input id="day1input"
                         placeholder="Matin"
                         type="number"
-                        v-model="user.planning[currentPage-1].lundi.crenau1"
+                        v-model="user.planning[semaine-1].lundi.crenau1"
                         required>
           </b-form-input>
           </b-col>
@@ -26,7 +26,7 @@
           <b-form-input id="day1input2"
                         placeholder="Après-midi"
                         type="number"
-                        v-model="user.planning[currentPage-1].lundi.crenau2"
+                        v-model="user.planning[semaine-1].lundi.crenau2"
                         required>
           </b-form-input>
           </b-col>
@@ -35,24 +35,24 @@
           <b-form-input id="day1input2"
                         placeholder="Déjeuner"
                         type="number"
-                        v-model="user.planning[currentPage-1].lundi.pause"
+                        v-model="user.planning[semaine-1].lundi.pause"
                         required>
           </b-form-input>
           </b-col>
 
           <b-col cols="12" md="3">
             
-              <b-form-radio-group id="btnradios2"
+              <b-form-radio-group 
                             buttons
                             button-variant="outline-primary"
                             size="md"
-                            v-model="user.planning[currentPage-1].lundi.abscence"
-                            :options="options"
-                            name="radioBtnOutline" />
+                            v-model="user.planning[semaine-1].lundi.abscence"
+                            :options="options" >
+              </b-form-radio-group>
           </b-col>
 
           <b-col>
-              <p>Heures effectives : {{user.planning[currentPage-1].lundi.crenau2 - user.planning[currentPage-1].lundi.crenau1 - user.planning[currentPage-1].lundi.pause}}</p>
+              <p>Heures effectives : {{user.planning[semaine-1].lundi.crenau2 - user.planning[semaine-1].lundi.crenau1 - user.planning[semaine-1].lundi.pause}}</p>
           </b-col>
         </b-row>
       </b-form-group>
@@ -66,7 +66,7 @@
         <b-form-input id="day2input"
                       placeholder="Matin"
                       type="number"
-                      v-model="user.planning[currentPage-1].mardi.crenau1"
+                      v-model="user.planning[semaine-1].mardi.crenau1"
                       required>
         </b-form-input>
         </b-col>
@@ -74,7 +74,7 @@
         <b-form-input id="day2input2"
                       placeholder="Après-midi"
                       type="number"
-                      v-model="user.planning[currentPage-1].mardi.crenau2"
+                      v-model="user.planning[semaine-1].mardi.crenau2"
                       required>
         </b-form-input>
         </b-col>
@@ -82,22 +82,22 @@
           <b-form-input id="day1input2"
                         placeholder="Déjeuner"
                         type="number"
-                        v-model="user.planning[currentPage-1].mardi.pause"
+                        v-model="user.planning[semaine-1].mardi.pause"
                         required>
           </b-form-input>
           </b-col>
         <b-col cols="12" md="3">
           
-            <b-form-radio-group id="btnradios2"
+            <b-form-radio-group 
                           buttons
                           button-variant="outline-primary"
                           size="md"
-                          v-model="user.planning[currentPage-1].mardi.abscence"
-                          :options="options"
-                          name="radioBtnOutline" />
+                          v-model="user.planning[semaine-1].mardi.abscence"
+                          :options="options">
+            </b-form-radio-group>
         </b-col>
         <b-col>
-              <p>Heures effectives : {{user.planning[currentPage-1].mardi.crenau2 - user.planning[currentPage-1].mardi.crenau1 - user.planning[currentPage-1].mardi.pause}}</p>
+              <p>Heures effectives : {{user.planning[semaine-1].mardi.crenau2 - user.planning[semaine-1].mardi.crenau1 - user.planning[semaine-1].mardi.pause}}</p>
           </b-col>
         </b-row>
       </b-form-group>
@@ -109,7 +109,7 @@
         <b-form-input id="day3input"
                       placeholder="Matin"
                       type="number"
-                      v-model="user.planning[currentPage-1].mercredi.crenau1"
+                      v-model="user.planning[semaine-1].mercredi.crenau1"
                       required>
         </b-form-input>
         </b-col>
@@ -117,7 +117,7 @@
         <b-form-input id="day3input2"
                       placeholder="Après-midi"
                       type="number"
-                      v-model="user.planning[currentPage-1].mercredi.crenau2"
+                      v-model="user.planning[semaine-1].mercredi.crenau2"
                       required>
         </b-form-input>
         </b-col>
@@ -125,22 +125,22 @@
           <b-form-input id="day1input2"
                         placeholder="Déjeuner"
                         type="number"
-                        v-model="user.planning[currentPage-1].mercredi.pause"
+                        v-model="user.planning[semaine-1].mercredi.pause"
                         required>
           </b-form-input>
           </b-col>
         <b-col cols="12" md="3">
           
-            <b-form-radio-group id="btnradios2"
+            <b-form-radio-group 
                           buttons
                           button-variant="outline-primary"
                           size="md"
-                          v-model="user.planning[currentPage-1].mercredi.abscence"
-                          :options="options"
-                          name="radioBtnOutline" />
+                          v-model="user.planning[semaine-1].mercredi.abscence"
+                          :options="options" >
+            </b-form-radio-group>
         </b-col>
         <b-col>
-              <p>Heures effectives : {{user.planning[currentPage-1].mercredi.crenau2 - user.planning[currentPage-1].mercredi.crenau1 - user.planning[currentPage-1].mercredi.pause}}</p>
+              <p>Heures effectives : {{user.planning[semaine-1].mercredi.crenau2 - user.planning[semaine-1].mercredi.crenau1 - user.planning[semaine-1].mercredi.pause}}</p>
           </b-col>
         </b-row>
       </b-form-group>
@@ -152,7 +152,7 @@
         <b-form-input id="day4input"
                       placeholder="Matin"
                       type="number"
-                      v-model="user.planning[currentPage-1].jeudi.crenau1"
+                      v-model="user.planning[semaine-1].jeudi.crenau1"
                       required>
         </b-form-input>
         </b-col>
@@ -160,7 +160,7 @@
         <b-form-input id="day4input2"
                       placeholder="Après-midi"
                       type="number"
-                      v-model="user.planning[currentPage-1].jeudi.crenau2"
+                      v-model="user.planning[semaine-1].jeudi.crenau2"
                       required>
         </b-form-input>
         </b-col>
@@ -168,22 +168,22 @@
           <b-form-input id="day1input2"
                         placeholder="Déjeuner"
                         type="number"
-                        v-model="user.planning[currentPage-1].jeudi.pause"
+                        v-model="user.planning[semaine-1].jeudi.pause"
                         required>
           </b-form-input>
           </b-col>
         <b-col cols="12" md="3">
           
-            <b-form-radio-group id="btnradios2"
+            <b-form-radio-group 
                           buttons
                           button-variant="outline-primary"
                           size="md"
-                          v-model="user.planning[currentPage-1].jeudi.abscence"
-                          :options="options"
-                          name="radioBtnOutline" />
+                          v-model="user.planning[semaine-1].jeudi.abscence"
+                          :options="options" >
+            </b-form-radio-group>
         </b-col>
         <b-col>
-              <p>Heures effectives : {{user.planning[currentPage-1].jeudi.crenau2 - user.planning[currentPage-1].jeudi.crenau1 - user.planning[currentPage-1].jeudi.pause}}</p>
+              <p>Heures effectives : {{user.planning[semaine-1].jeudi.crenau2 - user.planning[semaine-1].jeudi.crenau1 - user.planning[semaine-1].jeudi.pause}}</p>
           </b-col>
         </b-row>
       </b-form-group>
@@ -195,7 +195,7 @@
         <b-form-input id="day4input"
                       placeholder="Matin"
                       type="number"
-                      v-model="user.planning[currentPage-1].vendredi.crenau1"
+                      v-model="user.planning[semaine-1].vendredi.crenau1"
                       required>
         </b-form-input>
         </b-col>
@@ -203,7 +203,7 @@
         <b-form-input id="day4input2"
                       placeholder="Après-midi"
                       type="number"
-                      v-model="user.planning[currentPage-1].vendredi.crenau2"
+                      v-model="user.planning[semaine-1].vendredi.crenau2"
                       required>
         </b-form-input>
         </b-col>
@@ -211,22 +211,22 @@
           <b-form-input id="day1input2"
                         placeholder="Déjeuner"
                         type="number"
-                        v-model="user.planning[currentPage-1].vendredi.pause"
+                        v-model="user.planning[semaine-1].vendredi.pause"
                         required>
           </b-form-input>
           </b-col>
         <b-col cols="12" md="3">
           
-            <b-form-radio-group id="btnradios2"
+            <b-form-radio-group 
                           buttons
                           button-variant="outline-primary"
                           size="md"
-                          v-model="user.planning[currentPage-1].vendredi.abscence"
-                          :options="options"
-                          name="radioBtnOutline" />
+                          v-model="user.planning[semaine-1].vendredi.abscence"
+                          :options="options" >
+            </b-form-radio-group>
         </b-col>
         <b-col>
-              <p>Heures effectives : {{user.planning[currentPage-1].vendredi.crenau2 - user.planning[currentPage-1].vendredi.crenau1 - user.planning[currentPage-1].vendredi.pause}}</p>
+              <p>Heures effectives : {{user.planning[semaine-1].vendredi.crenau2 - user.planning[semaine-1].vendredi.crenau1 - user.planning[semaine-1].vendredi.pause}}</p>
           </b-col>
         </b-row>
       </b-form-group>
@@ -283,7 +283,7 @@
   }
 
   #resumeTypeNumber {
-    margin-top: 3%
+    margin-top: 3%;
   }
 }
 </style>
@@ -295,16 +295,13 @@ export default {
   created: function() {
     console.log("profil created");
     this.user = this.$root.getLoggedUser();
-    this.totalHeure = this.$root.countTotalHour(
-      this.user,
-      this.currentPage - 1
-    );
+    this.totalHeure = this.$root.countTotalHour(this.user, this.semaine - 1);
   },
   data() {
     return {
       user: {},
       totalHeure: "",
-      currentPage: 1,
+      semaine: 1,
       options: [
         { text: "Présent", value: "present" },
         { text: "CA", value: "CA" },
@@ -319,12 +316,7 @@ export default {
 
     submit: function() {
       this.$root.saveUser(this.user);
-      this.totalHeure = this.$root.countTotalHour(
-        this.user,
-        this.currentPage - 1
-      );
-
-      this.$router.push("calendar");
+      this.totalHeure = this.$root.countTotalHour(this.user, this.semaine - 1);
     }
   }
 };
