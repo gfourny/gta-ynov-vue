@@ -7,15 +7,12 @@
   <h3 class="mt-4">Semaine {{semaine}}</h3>
   <b-container>
   <b-form>
-   
-      <b-form-group id="day1inputgroup"
-                    label="Lundi:"
+      <b-form-group label="Lundi:"
                     label-for="day1input">
 
         <b-row class="justify-content-center">
           <b-col cols="4" md="2" >
-          <b-form-input id="day1input"
-                        placeholder="Matin"
+          <b-form-input placeholder="Matin"
                         type="number"
                         v-model="user.planning[semaine-1].lundi.crenau1"
                         required>
@@ -23,8 +20,7 @@
           </b-col>
 
           <b-col cols="4" md="2">
-          <b-form-input id="day1input2"
-                        placeholder="Après-midi"
+          <b-form-input placeholder="Après-midi"
                         type="number"
                         v-model="user.planning[semaine-1].lundi.crenau2"
                         required>
@@ -32,8 +28,7 @@
           </b-col>
 
           <b-col cols="4" md="1">
-          <b-form-input id="day1input2"
-                        placeholder="Déjeuner"
+          <b-form-input placeholder="Déjeuner"
                         type="number"
                         v-model="user.planning[semaine-1].lundi.pause"
                         required>
@@ -58,36 +53,32 @@
       </b-form-group>
 
 
-      <b-form-group id="day2inputgroup"
-                    label="Mardi:"
+      <b-form-group label="Mardi:"
                     label-for="day1input">
       <b-row class="justify-content-center">
         <b-col cols="4" md="2">
-        <b-form-input id="day2input"
-                      placeholder="Matin"
+        <b-form-input placeholder="Matin"
                       type="number"
                       v-model="user.planning[semaine-1].mardi.crenau1"
                       required>
         </b-form-input>
         </b-col>
         <b-col cols="4" md="2">
-        <b-form-input id="day2input2"
-                      placeholder="Après-midi"
+        <b-form-input placeholder="Après-midi"
                       type="number"
                       v-model="user.planning[semaine-1].mardi.crenau2"
                       required>
         </b-form-input>
         </b-col>
         <b-col cols="4" md="1">
-          <b-form-input id="day1input2"
-                        placeholder="Déjeuner"
+          <b-form-input placeholder="Déjeuner"
                         type="number"
                         v-model="user.planning[semaine-1].mardi.pause"
                         required>
           </b-form-input>
           </b-col>
         <b-col cols="12" md="3">
-          
+
             <b-form-radio-group 
                           buttons
                           button-variant="outline-primary"
@@ -101,29 +92,25 @@
           </b-col>
         </b-row>
       </b-form-group>
-      <b-form-group id="day3inputgroup"
-                    label="Mercredi:"
+      <b-form-group label="Mercredi:"
                     label-for="day1input">
       <b-row class="justify-content-center">
         <b-col cols="4" md="2">
-        <b-form-input id="day3input"
-                      placeholder="Matin"
+        <b-form-input placeholder="Matin"
                       type="number"
                       v-model="user.planning[semaine-1].mercredi.crenau1"
                       required>
         </b-form-input>
         </b-col>
         <b-col cols="4" md="2">
-        <b-form-input id="day3input2"
-                      placeholder="Après-midi"
+        <b-form-input placeholder="Après-midi"
                       type="number"
                       v-model="user.planning[semaine-1].mercredi.crenau2"
                       required>
         </b-form-input>
         </b-col>
         <b-col cols="4" md="1">
-          <b-form-input id="day1input2"
-                        placeholder="Déjeuner"
+          <b-form-input placeholder="Déjeuner"
                         type="number"
                         v-model="user.planning[semaine-1].mercredi.pause"
                         required>
@@ -140,33 +127,29 @@
             </b-form-radio-group>
         </b-col>
         <b-col>
-              <p>Heures effectives : {{user.planning[semaine-1].mercredi.crenau2 - user.planning[semaine-1].mercredi.crenau1 - user.planning[semaine-1].mercredi.pause}}</p>
-          </b-col>
+            <p>Heures effectives : {{user.planning[semaine-1].mercredi.crenau2 - user.planning[semaine-1].mercredi.crenau1 - user.planning[semaine-1].mercredi.pause}}</p>
+        </b-col>
         </b-row>
       </b-form-group>
-      <b-form-group id="day4inputgroup"
-                    label="Jeudi:"
+      <b-form-group label="Jeudi:"
                     label-for="day1input">
       <b-row class="justify-content-center">
         <b-col cols="4" md="2">
-        <b-form-input id="day4input"
-                      placeholder="Matin"
+        <b-form-input placeholder="Matin"
                       type="number"
                       v-model="user.planning[semaine-1].jeudi.crenau1"
                       required>
         </b-form-input>
         </b-col>
         <b-col cols="4" md="2">
-        <b-form-input id="day4input2"
-                      placeholder="Après-midi"
+        <b-form-input placeholder="Après-midi"
                       type="number"
                       v-model="user.planning[semaine-1].jeudi.crenau2"
                       required>
         </b-form-input>
         </b-col>
         <b-col cols="4" md="1">
-          <b-form-input id="day1input2"
-                        placeholder="Déjeuner"
+          <b-form-input placeholder="Déjeuner"
                         type="number"
                         v-model="user.planning[semaine-1].jeudi.pause"
                         required>
@@ -187,29 +170,25 @@
           </b-col>
         </b-row>
       </b-form-group>
-      <b-form-group id="day4inputgroup"
-                    label="Vendredi:"
+      <b-form-group label="Vendredi:"
                     label-for="day1input">
       <b-row class="justify-content-center">
         <b-col cols="4" md="2">
-        <b-form-input id="day4input"
-                      placeholder="Matin"
+        <b-form-input placeholder="Matin"
                       type="number"
                       v-model="user.planning[semaine-1].vendredi.crenau1"
                       required>
         </b-form-input>
         </b-col>
         <b-col cols="4" md="2">
-        <b-form-input id="day4input2"
-                      placeholder="Après-midi"
+        <b-form-input placeholder="Après-midi"
                       type="number"
                       v-model="user.planning[semaine-1].vendredi.crenau2"
                       required>
         </b-form-input>
         </b-col>
         <b-col cols="4" md="1">
-          <b-form-input id="day1input2"
-                        placeholder="Déjeuner"
+          <b-form-input placeholder="Déjeuner"
                         type="number"
                         v-model="user.planning[semaine-1].vendredi.pause"
                         required>

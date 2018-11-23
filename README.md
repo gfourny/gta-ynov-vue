@@ -46,5 +46,9 @@ Programme du 23/11/2018
 Modifier l'affichage de la page agenda. Afficher le nombre d'heure par semaine.
 Enregistrer les données des différentes semaines dans le localStorage.
 
+Fin de journée du 23/11/2018
+L'affichage à été modifier. Les données sont enregistrées en fonction des semaines.
+Corriger le problèlme d'url, faire un boucle v-for pour les jours et binder les données.
+
 Application visible sur https://gfourny.github.io/
 
