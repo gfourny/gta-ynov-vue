@@ -84,6 +84,1638 @@ let checkData = () => {
               "abscence": "RTT"
             }
           },
+          {
+            "lundi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "mardi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "mercredi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "jeudi": {
+              "crenau1": 8,
+              "crenau2": 17,
+              "pause": 1,
+              "abscence": "CA"
+            },
+            "vendredi": {
+              "crenau1": 8,
+              "crenau2": 17,
+              "pause": 1,
+              "abscence": "RTT"
+            }
+          },
+          {
+            "lundi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "mardi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "mercredi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "jeudi": {
+              "crenau1": 8,
+              "crenau2": 17,
+              "pause": 1,
+              "abscence": "CA"
+            },
+            "vendredi": {
+              "crenau1": 8,
+              "crenau2": 17,
+              "pause": 1,
+              "abscence": "RTT"
+            }
+          },
+          {
+            "lundi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "mardi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "mercredi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "jeudi": {
+              "crenau1": 8,
+              "crenau2": 17,
+              "pause": 1,
+              "abscence": "CA"
+            },
+            "vendredi": {
+              "crenau1": 8,
+              "crenau2": 17,
+              "pause": 1,
+              "abscence": "RTT"
+            }
+          },
+          {
+            "lundi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "mardi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "mercredi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "jeudi": {
+              "crenau1": 8,
+              "crenau2": 17,
+              "pause": 1,
+              "abscence": "CA"
+            },
+            "vendredi": {
+              "crenau1": 8,
+              "crenau2": 17,
+              "pause": 1,
+              "abscence": "RTT"
+            }
+          },
+          {
+            "lundi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "mardi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "mercredi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "jeudi": {
+              "crenau1": 8,
+              "crenau2": 17,
+              "pause": 1,
+              "abscence": "CA"
+            },
+            "vendredi": {
+              "crenau1": 8,
+              "crenau2": 17,
+              "pause": 1,
+              "abscence": "RTT"
+            }
+          },
+          {
+            "lundi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "mardi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "mercredi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "jeudi": {
+              "crenau1": 8,
+              "crenau2": 17,
+              "pause": 1,
+              "abscence": "CA"
+            },
+            "vendredi": {
+              "crenau1": 8,
+              "crenau2": 17,
+              "pause": 1,
+              "abscence": "RTT"
+            }
+          },
+          {
+            "lundi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "mardi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "mercredi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "jeudi": {
+              "crenau1": 8,
+              "crenau2": 17,
+              "pause": 1,
+              "abscence": "CA"
+            },
+            "vendredi": {
+              "crenau1": 8,
+              "crenau2": 17,
+              "pause": 1,
+              "abscence": "RTT"
+            }
+          },
+          {
+            "lundi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "mardi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "mercredi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "jeudi": {
+              "crenau1": 8,
+              "crenau2": 17,
+              "pause": 1,
+              "abscence": "CA"
+            },
+            "vendredi": {
+              "crenau1": 8,
+              "crenau2": 17,
+              "pause": 1,
+              "abscence": "RTT"
+            }
+          },
+          {
+            "lundi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "mardi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "mercredi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "jeudi": {
+              "crenau1": 8,
+              "crenau2": 17,
+              "pause": 1,
+              "abscence": "CA"
+            },
+            "vendredi": {
+              "crenau1": 8,
+              "crenau2": 17,
+              "pause": 1,
+              "abscence": "RTT"
+            }
+          },
+          {
+            "lundi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "mardi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "mercredi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "jeudi": {
+              "crenau1": 8,
+              "crenau2": 17,
+              "pause": 1,
+              "abscence": "CA"
+            },
+            "vendredi": {
+              "crenau1": 8,
+              "crenau2": 17,
+              "pause": 1,
+              "abscence": "RTT"
+            }
+          },
+          {
+            "lundi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "mardi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "mercredi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "jeudi": {
+              "crenau1": 8,
+              "crenau2": 17,
+              "pause": 1,
+              "abscence": "CA"
+            },
+            "vendredi": {
+              "crenau1": 8,
+              "crenau2": 17,
+              "pause": 1,
+              "abscence": "RTT"
+            }
+          },
+          {
+            "lundi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "mardi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "mercredi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "jeudi": {
+              "crenau1": 8,
+              "crenau2": 17,
+              "pause": 1,
+              "abscence": "CA"
+            },
+            "vendredi": {
+              "crenau1": 8,
+              "crenau2": 17,
+              "pause": 1,
+              "abscence": "RTT"
+            }
+          },
+          {
+            "lundi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "mardi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "mercredi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "jeudi": {
+              "crenau1": 8,
+              "crenau2": 17,
+              "pause": 1,
+              "abscence": "CA"
+            },
+            "vendredi": {
+              "crenau1": 8,
+              "crenau2": 17,
+              "pause": 1,
+              "abscence": "RTT"
+            }
+          },
+          {
+            "lundi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "mardi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "mercredi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "jeudi": {
+              "crenau1": 8,
+              "crenau2": 17,
+              "pause": 1,
+              "abscence": "CA"
+            },
+            "vendredi": {
+              "crenau1": 8,
+              "crenau2": 17,
+              "pause": 1,
+              "abscence": "RTT"
+            }
+          },
+          {
+            "lundi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "mardi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "mercredi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "jeudi": {
+              "crenau1": 8,
+              "crenau2": 17,
+              "pause": 1,
+              "abscence": "CA"
+            },
+            "vendredi": {
+              "crenau1": 8,
+              "crenau2": 17,
+              "pause": 1,
+              "abscence": "RTT"
+            }
+          },
+          {
+            "lundi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "mardi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "mercredi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "jeudi": {
+              "crenau1": 8,
+              "crenau2": 17,
+              "pause": 1,
+              "abscence": "CA"
+            },
+            "vendredi": {
+              "crenau1": 8,
+              "crenau2": 17,
+              "pause": 1,
+              "abscence": "RTT"
+            }
+          },
+          {
+            "lundi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "mardi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "mercredi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "jeudi": {
+              "crenau1": 8,
+              "crenau2": 17,
+              "pause": 1,
+              "abscence": "CA"
+            },
+            "vendredi": {
+              "crenau1": 8,
+              "crenau2": 17,
+              "pause": 1,
+              "abscence": "RTT"
+            }
+          },
+          {
+            "lundi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "mardi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "mercredi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "jeudi": {
+              "crenau1": 8,
+              "crenau2": 17,
+              "pause": 1,
+              "abscence": "CA"
+            },
+            "vendredi": {
+              "crenau1": 8,
+              "crenau2": 17,
+              "pause": 1,
+              "abscence": "RTT"
+            }
+          },
+          {
+            "lundi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "mardi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "mercredi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "jeudi": {
+              "crenau1": 8,
+              "crenau2": 17,
+              "pause": 1,
+              "abscence": "CA"
+            },
+            "vendredi": {
+              "crenau1": 8,
+              "crenau2": 17,
+              "pause": 1,
+              "abscence": "RTT"
+            }
+          },
+          {
+            "lundi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "mardi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "mercredi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "jeudi": {
+              "crenau1": 8,
+              "crenau2": 17,
+              "pause": 1,
+              "abscence": "CA"
+            },
+            "vendredi": {
+              "crenau1": 8,
+              "crenau2": 17,
+              "pause": 1,
+              "abscence": "RTT"
+            }
+          },
+          {
+            "lundi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "mardi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "mercredi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "jeudi": {
+              "crenau1": 8,
+              "crenau2": 17,
+              "pause": 1,
+              "abscence": "CA"
+            },
+            "vendredi": {
+              "crenau1": 8,
+              "crenau2": 17,
+              "pause": 1,
+              "abscence": "RTT"
+            }
+          },
+          {
+            "lundi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "mardi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "mercredi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "jeudi": {
+              "crenau1": 8,
+              "crenau2": 17,
+              "pause": 1,
+              "abscence": "CA"
+            },
+            "vendredi": {
+              "crenau1": 8,
+              "crenau2": 17,
+              "pause": 1,
+              "abscence": "RTT"
+            }
+          },
+          {
+            "lundi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "mardi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "mercredi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "jeudi": {
+              "crenau1": 8,
+              "crenau2": 17,
+              "pause": 1,
+              "abscence": "CA"
+            },
+            "vendredi": {
+              "crenau1": 8,
+              "crenau2": 17,
+              "pause": 1,
+              "abscence": "RTT"
+            }
+          },
+          {
+            "lundi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "mardi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "mercredi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "jeudi": {
+              "crenau1": 8,
+              "crenau2": 17,
+              "pause": 1,
+              "abscence": "CA"
+            },
+            "vendredi": {
+              "crenau1": 8,
+              "crenau2": 17,
+              "pause": 1,
+              "abscence": "RTT"
+            }
+          },
+          {
+            "lundi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "mardi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "mercredi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "jeudi": {
+              "crenau1": 8,
+              "crenau2": 17,
+              "pause": 1,
+              "abscence": "CA"
+            },
+            "vendredi": {
+              "crenau1": 8,
+              "crenau2": 17,
+              "pause": 1,
+              "abscence": "RTT"
+            }
+          },
+          {
+            "lundi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "mardi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "mercredi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "jeudi": {
+              "crenau1": 8,
+              "crenau2": 17,
+              "pause": 1,
+              "abscence": "CA"
+            },
+            "vendredi": {
+              "crenau1": 8,
+              "crenau2": 17,
+              "pause": 1,
+              "abscence": "RTT"
+            }
+          },
+          {
+            "lundi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "mardi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "mercredi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "jeudi": {
+              "crenau1": 8,
+              "crenau2": 17,
+              "pause": 1,
+              "abscence": "CA"
+            },
+            "vendredi": {
+              "crenau1": 8,
+              "crenau2": 17,
+              "pause": 1,
+              "abscence": "RTT"
+            }
+          },
+          {
+            "lundi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "mardi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "mercredi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "jeudi": {
+              "crenau1": 8,
+              "crenau2": 17,
+              "pause": 1,
+              "abscence": "CA"
+            },
+            "vendredi": {
+              "crenau1": 8,
+              "crenau2": 17,
+              "pause": 1,
+              "abscence": "RTT"
+            }
+          },
+          {
+            "lundi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "mardi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "mercredi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "jeudi": {
+              "crenau1": 8,
+              "crenau2": 17,
+              "pause": 1,
+              "abscence": "CA"
+            },
+            "vendredi": {
+              "crenau1": 8,
+              "crenau2": 17,
+              "pause": 1,
+              "abscence": "RTT"
+            }
+          },
+          {
+            "lundi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "mardi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "mercredi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "jeudi": {
+              "crenau1": 8,
+              "crenau2": 17,
+              "pause": 1,
+              "abscence": "CA"
+            },
+            "vendredi": {
+              "crenau1": 8,
+              "crenau2": 17,
+              "pause": 1,
+              "abscence": "RTT"
+            }
+          },
+          {
+            "lundi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "mardi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "mercredi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "jeudi": {
+              "crenau1": 8,
+              "crenau2": 17,
+              "pause": 1,
+              "abscence": "CA"
+            },
+            "vendredi": {
+              "crenau1": 8,
+              "crenau2": 17,
+              "pause": 1,
+              "abscence": "RTT"
+            }
+          },
+          {
+            "lundi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "mardi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "mercredi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "jeudi": {
+              "crenau1": 8,
+              "crenau2": 17,
+              "pause": 1,
+              "abscence": "CA"
+            },
+            "vendredi": {
+              "crenau1": 8,
+              "crenau2": 17,
+              "pause": 1,
+              "abscence": "RTT"
+            }
+          },
+          {
+            "lundi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "mardi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "mercredi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "jeudi": {
+              "crenau1": 8,
+              "crenau2": 17,
+              "pause": 1,
+              "abscence": "CA"
+            },
+            "vendredi": {
+              "crenau1": 8,
+              "crenau2": 17,
+              "pause": 1,
+              "abscence": "RTT"
+            }
+          },
+          {
+            "lundi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "mardi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "mercredi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "jeudi": {
+              "crenau1": 8,
+              "crenau2": 17,
+              "pause": 1,
+              "abscence": "CA"
+            },
+            "vendredi": {
+              "crenau1": 8,
+              "crenau2": 17,
+              "pause": 1,
+              "abscence": "RTT"
+            }
+          },
+          {
+            "lundi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "mardi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "mercredi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "jeudi": {
+              "crenau1": 8,
+              "crenau2": 17,
+              "pause": 1,
+              "abscence": "CA"
+            },
+            "vendredi": {
+              "crenau1": 8,
+              "crenau2": 17,
+              "pause": 1,
+              "abscence": "RTT"
+            }
+          },
+          {
+            "lundi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "mardi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "mercredi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "jeudi": {
+              "crenau1": 8,
+              "crenau2": 17,
+              "pause": 1,
+              "abscence": "CA"
+            },
+            "vendredi": {
+              "crenau1": 8,
+              "crenau2": 17,
+              "pause": 1,
+              "abscence": "RTT"
+            }
+          },
+          {
+            "lundi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "mardi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "mercredi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "jeudi": {
+              "crenau1": 8,
+              "crenau2": 17,
+              "pause": 1,
+              "abscence": "CA"
+            },
+            "vendredi": {
+              "crenau1": 8,
+              "crenau2": 17,
+              "pause": 1,
+              "abscence": "RTT"
+            }
+          },
+          {
+            "lundi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "mardi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "mercredi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "jeudi": {
+              "crenau1": 8,
+              "crenau2": 17,
+              "pause": 1,
+              "abscence": "CA"
+            },
+            "vendredi": {
+              "crenau1": 8,
+              "crenau2": 17,
+              "pause": 1,
+              "abscence": "RTT"
+            }
+          },
+          {
+            "lundi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "mardi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "mercredi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "jeudi": {
+              "crenau1": 8,
+              "crenau2": 17,
+              "pause": 1,
+              "abscence": "CA"
+            },
+            "vendredi": {
+              "crenau1": 8,
+              "crenau2": 17,
+              "pause": 1,
+              "abscence": "RTT"
+            }
+          },
+          {
+            "lundi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "mardi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "mercredi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "jeudi": {
+              "crenau1": 8,
+              "crenau2": 17,
+              "pause": 1,
+              "abscence": "CA"
+            },
+            "vendredi": {
+              "crenau1": 8,
+              "crenau2": 17,
+              "pause": 1,
+              "abscence": "RTT"
+            }
+          },
+          {
+            "lundi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "mardi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "mercredi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "jeudi": {
+              "crenau1": 8,
+              "crenau2": 17,
+              "pause": 1,
+              "abscence": "CA"
+            },
+            "vendredi": {
+              "crenau1": 8,
+              "crenau2": 17,
+              "pause": 1,
+              "abscence": "RTT"
+            }
+          },
+          {
+            "lundi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "mardi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "mercredi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "jeudi": {
+              "crenau1": 8,
+              "crenau2": 17,
+              "pause": 1,
+              "abscence": "CA"
+            },
+            "vendredi": {
+              "crenau1": 8,
+              "crenau2": 17,
+              "pause": 1,
+              "abscence": "RTT"
+            }
+          },
+          {
+            "lundi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "mardi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "mercredi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "jeudi": {
+              "crenau1": 8,
+              "crenau2": 17,
+              "pause": 1,
+              "abscence": "CA"
+            },
+            "vendredi": {
+              "crenau1": 8,
+              "crenau2": 17,
+              "pause": 1,
+              "abscence": "RTT"
+            }
+          },
+          {
+            "lundi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "mardi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "mercredi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "jeudi": {
+              "crenau1": 8,
+              "crenau2": 17,
+              "pause": 1,
+              "abscence": "CA"
+            },
+            "vendredi": {
+              "crenau1": 8,
+              "crenau2": 17,
+              "pause": 1,
+              "abscence": "RTT"
+            }
+          },
+          {
+            "lundi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "mardi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "mercredi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "jeudi": {
+              "crenau1": 8,
+              "crenau2": 17,
+              "pause": 1,
+              "abscence": "CA"
+            },
+            "vendredi": {
+              "crenau1": 8,
+              "crenau2": 17,
+              "pause": 1,
+              "abscence": "RTT"
+            }
+          },
+          {
+            "lundi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "mardi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "mercredi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "jeudi": {
+              "crenau1": 8,
+              "crenau2": 17,
+              "pause": 1,
+              "abscence": "CA"
+            },
+            "vendredi": {
+              "crenau1": 8,
+              "crenau2": 17,
+              "pause": 1,
+              "abscence": "RTT"
+            }
+          },
+          {
+            "lundi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "mardi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "mercredi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "jeudi": {
+              "crenau1": 8,
+              "crenau2": 17,
+              "pause": 1,
+              "abscence": "CA"
+            },
+            "vendredi": {
+              "crenau1": 8,
+              "crenau2": 17,
+              "pause": 1,
+              "abscence": "RTT"
+            }
+          },
+          {
+            "lundi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "mardi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "mercredi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "jeudi": {
+              "crenau1": 8,
+              "crenau2": 17,
+              "pause": 1,
+              "abscence": "CA"
+            },
+            "vendredi": {
+              "crenau1": 8,
+              "crenau2": 17,
+              "pause": 1,
+              "abscence": "RTT"
+            }
+          },
+          {
+            "lundi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "mardi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "mercredi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "jeudi": {
+              "crenau1": 8,
+              "crenau2": 17,
+              "pause": 1,
+              "abscence": "CA"
+            },
+            "vendredi": {
+              "crenau1": 8,
+              "crenau2": 17,
+              "pause": 1,
+              "abscence": "RTT"
+            }
+          },
+          {
+            "lundi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "mardi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "mercredi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "jeudi": {
+              "crenau1": 8,
+              "crenau2": 17,
+              "pause": 1,
+              "abscence": "CA"
+            },
+            "vendredi": {
+              "crenau1": 8,
+              "crenau2": 17,
+              "pause": 1,
+              "abscence": "RTT"
+            }
+          },
+          {
+            "lundi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "mardi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "mercredi": {
+              "crenau1": 9,
+              "crenau2": 18,
+              "pause": 2,
+              "abscence": "present"
+            },
+            "jeudi": {
+              "crenau1": 8,
+              "crenau2": 17,
+              "pause": 1,
+              "abscence": "CA"
+            },
+            "vendredi": {
+              "crenau1": 8,
+              "crenau2": 17,
+              "pause": 1,
+              "abscence": "RTT"
+            }
+          }
         ],
         "conge": {
           "CA": 25,
@@ -143,6 +1775,7 @@ let checkData = () => {
               "abscence": "RTT"
             }
           },
+
         ],
         "conge": {
           "CA": 3,
@@ -202,23 +1835,21 @@ export default {
     return usersfind
   },
 
-  countTotalHour: function(user){
+  countTotalHour: function (user, semaine) {
 
     let totalHour = 0
     let tempsPause = 0
     let tempsTravail = 0
 
     let days = ["lundi", "mardi", "mercredi", "jeudi", "vendredi"]
+    let planning = user.planning[semaine]
 
-    user.planning.forEach(element => {
-      days.forEach(day => {
-        tempsPause = tempsPause + element[day].pause
-        tempsTravail = tempsTravail + element[day].crenau2 - element[day].crenau1
-      })
+    days.forEach(day => {
+      tempsPause = tempsPause + planning[day].pause
+      tempsTravail = tempsTravail + planning[day].crenau2 - planning[day].crenau1
     })
 
     totalHour = tempsTravail - tempsPause
-    console.log(totalHour)
     return totalHour
   }
 }
