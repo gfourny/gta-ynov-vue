@@ -2,6 +2,10 @@
 
 Progressive Web App de gestion du temps et des activités
 
+Pour se connecter à l'application :
+login: gfourny@domain.com
+password: Password01
+
 Programme du jeudi 08/11/2018:
 Préparer le projet gta-ynov-vue. Configurer un hébergement pour l'application web.
 Lecture du cahier des charges. Prise de main de Vue CLI. 
@@ -37,6 +41,9 @@ Corriger les id pour la sélection du type de demi-journée. Enregistrer les val
 
 Fin de journée du 22/11/2018
 Changement de page agenda, enregistrement des horaires et type de journée fonctionnel.
+
+Programme du 23/11/2018
+Modifier l'affichage de la page agenda. Afficher le nombre d'heure par semaine.
 
 Application visible sur https://gfourny.github.io/
 

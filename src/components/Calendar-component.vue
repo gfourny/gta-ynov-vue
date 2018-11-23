@@ -243,6 +243,15 @@
     </b-col>
   </b-row>
   </b-container>
+  <b-form-group id="totalHeureGroup"
+                    label="Nombre d'heure par semaine :"
+                    label-for="totalHeure">
+        <b-form-input id="totalHeure"
+                      type="text"
+                      v-model="totalHeure"
+                      readonly>
+        </b-form-input>
+      </b-form-group>
 </div>
 </template>
 
@@ -252,10 +261,12 @@ export default {
   created: function() {
     console.log("profil created");
     this.user = this.$root.getLoggedUser();
+    this.totalHeure = this.$root.countTotalHour(this.user, this.currentPage - 1);
   },
   data() {
     return {
       user: {},
+      totalHeure: '',
       currentPage: 1,
       options: [
         { text: "Présent", value: "present" },

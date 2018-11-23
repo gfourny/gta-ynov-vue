@@ -200,5 +200,15 @@ export default {
       mail: data.filter(u => u.mail.toUpperCase().includes(mail.toUpperCase())) || []
     }
     return usersfind
+  },
+
+  countTotalHour: function(user, semaine){
+
+    user.planning[semaine]
+
+    let test = user.planning.forEach(function(element, index) {
+      console.log(index)
+      console.log(element)
+    })
   }
 }
