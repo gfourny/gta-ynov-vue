@@ -282,6 +282,7 @@ export default {
 
     submit: function(){
         this.$root.saveUser(this.user);
+        this.totalHeure = this.$root.countTotalHour(this.user, this.currentPage - 1);
     }
   }
 };

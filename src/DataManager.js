@@ -202,13 +202,23 @@ export default {
     return usersfind
   },
 
-  countTotalHour: function(user, semaine){
+  countTotalHour: function(user){
 
-    user.planning[semaine]
+    let totalHour = 0
+    let tempsPause = 0
+    let tempsTravail = 0
 
-    let test = user.planning.forEach(function(element, index) {
-      console.log(index)
-      console.log(element)
+    let days = ["lundi", "mardi", "mercredi", "jeudi", "vendredi"]
+
+    user.planning.forEach(element => {
+      days.forEach(day => {
+        tempsPause = tempsPause + element[day].pause
+        tempsTravail = tempsTravail + element[day].crenau2 - element[day].crenau1
+      })
     })
+
+    totalHour = tempsTravail - tempsPause
+    console.log(totalHour)
+    return totalHour
   }
 }
