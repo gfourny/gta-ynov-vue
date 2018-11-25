@@ -50,5 +50,9 @@ Fin de journée du 23/11/2018
 L'affichage à été modifier. Les données sont enregistrées en fonction des semaines.
 Corriger le problèlme d'url, faire un boucle v-for pour les jours et binder les données.
 
+Progamme du 25/11/2018
+Boucle v-for mise en place sur l'affichage de la page calendrier
+Attention: Le bind v-model ne fonctionne pas, aucune explication pour le moment car day est bien affecté. Problème bootstrap ?
+
 Application visible sur https://gfourny.github.io/
 
