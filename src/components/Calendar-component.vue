@@ -6,221 +6,60 @@
 
   <h3 class="mt-4">Semaine {{semaine}}</h3>
   <b-container>
-  <b-form>
-      <b-form-group label="Lundi:"
-                    label-for="day1input">
+    <b-form v-for="day in days" :key="day.id">
+        <b-form-group :label="day"
+                        label-for="day1input">
 
-        <b-row class="justify-content-center">
-          <b-col cols="4" md="2" >
-          <b-form-input placeholder="Matin"
-                        type="number"
-                        v-model="user.planning[semaine-1].lundi.crenau1"
-                        required>
-          </b-form-input>
-          </b-col>
+            <b-row class="justify-content-center">
+              <b-col cols="4" md="2" >
+              <b-form-input :v-model="'user.planning[semaine-1].day.crenau1'"
+                            required>
+              </b-form-input>
+              </b-col>
 
-          <b-col cols="4" md="2">
-          <b-form-input placeholder="Après-midi"
-                        type="number"
-                        v-model="user.planning[semaine-1].lundi.crenau2"
-                        required>
-          </b-form-input>
-          </b-col>
+              <b-col cols="4" md="2">
+              <b-form-input type="text"
+                            :v-model="'user.planning[semaine-1].day.crenau2'"
+                            required>
+              </b-form-input>
+              </b-col>
 
-          <b-col cols="4" md="1">
-          <b-form-input placeholder="Déjeuner"
-                        type="number"
-                        v-model="user.planning[semaine-1].lundi.pause"
-                        required>
-          </b-form-input>
-          </b-col>
+              <b-col cols="4" md="1">
+              <b-form-input type="number"
+                            :v-model="'user.planning[semaine-1].day.pause'"
+                            required>
+              </b-form-input>
+              </b-col>
 
-          <b-col cols="12" md="3">
-            
-              <b-form-radio-group 
-                            buttons
-                            button-variant="outline-primary"
-                            size="md"
-                            v-model="user.planning[semaine-1].lundi.abscence"
-                            :options="options" >
-              </b-form-radio-group>
-          </b-col>
+              <b-col cols="12" md="3">
+                
+                  <b-form-radio-group 
+                                buttons
+                                button-variant="outline-primary"
+                                size="md"
+                                :v-model="'user.planning[semaine-1].day.abscence'"
+                                :options="options" >
+                  </b-form-radio-group>
+              </b-col>
 
-          <b-col>
-              <p>Heures effectives : {{user.planning[semaine-1].lundi.crenau2 - user.planning[semaine-1].lundi.crenau1 - user.planning[semaine-1].lundi.pause}}</p>
-          </b-col>
-        </b-row>
-      </b-form-group>
-
-
-      <b-form-group label="Mardi:"
-                    label-for="day1input">
-      <b-row class="justify-content-center">
-        <b-col cols="4" md="2">
-        <b-form-input placeholder="Matin"
-                      type="number"
-                      v-model="user.planning[semaine-1].mardi.crenau1"
-                      required>
-        </b-form-input>
-        </b-col>
-        <b-col cols="4" md="2">
-        <b-form-input placeholder="Après-midi"
-                      type="number"
-                      v-model="user.planning[semaine-1].mardi.crenau2"
-                      required>
-        </b-form-input>
-        </b-col>
-        <b-col cols="4" md="1">
-          <b-form-input placeholder="Déjeuner"
-                        type="number"
-                        v-model="user.planning[semaine-1].mardi.pause"
-                        required>
-          </b-form-input>
-          </b-col>
-        <b-col cols="12" md="3">
-
-            <b-form-radio-group 
-                          buttons
-                          button-variant="outline-primary"
-                          size="md"
-                          v-model="user.planning[semaine-1].mardi.abscence"
-                          :options="options">
-            </b-form-radio-group>
-        </b-col>
-        <b-col>
-              <p>Heures effectives : {{user.planning[semaine-1].mardi.crenau2 - user.planning[semaine-1].mardi.crenau1 - user.planning[semaine-1].mardi.pause}}</p>
-          </b-col>
-        </b-row>
-      </b-form-group>
-      <b-form-group label="Mercredi:"
-                    label-for="day1input">
-      <b-row class="justify-content-center">
-        <b-col cols="4" md="2">
-        <b-form-input placeholder="Matin"
-                      type="number"
-                      v-model="user.planning[semaine-1].mercredi.crenau1"
-                      required>
-        </b-form-input>
-        </b-col>
-        <b-col cols="4" md="2">
-        <b-form-input placeholder="Après-midi"
-                      type="number"
-                      v-model="user.planning[semaine-1].mercredi.crenau2"
-                      required>
-        </b-form-input>
-        </b-col>
-        <b-col cols="4" md="1">
-          <b-form-input placeholder="Déjeuner"
-                        type="number"
-                        v-model="user.planning[semaine-1].mercredi.pause"
-                        required>
-          </b-form-input>
-          </b-col>
-        <b-col cols="12" md="3">
-          
-            <b-form-radio-group 
-                          buttons
-                          button-variant="outline-primary"
-                          size="md"
-                          v-model="user.planning[semaine-1].mercredi.abscence"
-                          :options="options" >
-            </b-form-radio-group>
-        </b-col>
-        <b-col>
-            <p>Heures effectives : {{user.planning[semaine-1].mercredi.crenau2 - user.planning[semaine-1].mercredi.crenau1 - user.planning[semaine-1].mercredi.pause}}</p>
-        </b-col>
-        </b-row>
-      </b-form-group>
-      <b-form-group label="Jeudi:"
-                    label-for="day1input">
-      <b-row class="justify-content-center">
-        <b-col cols="4" md="2">
-        <b-form-input placeholder="Matin"
-                      type="number"
-                      v-model="user.planning[semaine-1].jeudi.crenau1"
-                      required>
-        </b-form-input>
-        </b-col>
-        <b-col cols="4" md="2">
-        <b-form-input placeholder="Après-midi"
-                      type="number"
-                      v-model="user.planning[semaine-1].jeudi.crenau2"
-                      required>
-        </b-form-input>
-        </b-col>
-        <b-col cols="4" md="1">
-          <b-form-input placeholder="Déjeuner"
-                        type="number"
-                        v-model="user.planning[semaine-1].jeudi.pause"
-                        required>
-          </b-form-input>
-          </b-col>
-        <b-col cols="12" md="3">
-          
-            <b-form-radio-group 
-                          buttons
-                          button-variant="outline-primary"
-                          size="md"
-                          v-model="user.planning[semaine-1].jeudi.abscence"
-                          :options="options" >
-            </b-form-radio-group>
-        </b-col>
-        <b-col>
-              <p>Heures effectives : {{user.planning[semaine-1].jeudi.crenau2 - user.planning[semaine-1].jeudi.crenau1 - user.planning[semaine-1].jeudi.pause}}</p>
-          </b-col>
-        </b-row>
-      </b-form-group>
-      <b-form-group label="Vendredi:"
-                    label-for="day1input">
-      <b-row class="justify-content-center">
-        <b-col cols="4" md="2">
-        <b-form-input placeholder="Matin"
-                      type="number"
-                      v-model="user.planning[semaine-1].vendredi.crenau1"
-                      required>
-        </b-form-input>
-        </b-col>
-        <b-col cols="4" md="2">
-        <b-form-input placeholder="Après-midi"
-                      type="number"
-                      v-model="user.planning[semaine-1].vendredi.crenau2"
-                      required>
-        </b-form-input>
-        </b-col>
-        <b-col cols="4" md="1">
-          <b-form-input placeholder="Déjeuner"
-                        type="number"
-                        v-model="user.planning[semaine-1].vendredi.pause"
-                        required>
-          </b-form-input>
-          </b-col>
-        <b-col cols="12" md="3">
-          
-            <b-form-radio-group 
-                          buttons
-                          button-variant="outline-primary"
-                          size="md"
-                          v-model="user.planning[semaine-1].vendredi.abscence"
-                          :options="options" >
-            </b-form-radio-group>
-        </b-col>
-        <b-col>
-              <p>Heures effectives : {{user.planning[semaine-1].vendredi.crenau2 - user.planning[semaine-1].vendredi.crenau1 - user.planning[semaine-1].vendredi.pause}}</p>
-          </b-col>
-        </b-row>
-      </b-form-group>
-    
+              <b-col>
+                <input
+                readonly
+                :v-model="'{{user.planning[semaine-1].day.crenau2 - user.planning[semaine-1].day.crenau1 - user.planning[semaine-1].day.pause}}'"/>
+              </b-col>
+            </b-row>
+          </b-form-group>
+    </b-form>
     <b-button id="submitButton" type="submit" variant="primary" v-on:click="submit">Enregistrer</b-button>
-  </b-form>
-  <b-row class="justify-content-center" id="resumeTypeNumber">
-    
-    <b-col>
-      <p>CA disponnibles : {{user.conge.CA}}</p>   
-    </b-col>
-    <b-col>
-      <p>RTT disponnibles : {{user.conge.RTT}}</p>
-    </b-col>
-  </b-row>
+    <b-row class="justify-content-center" id="resumeTypeNumber">
+      
+      <b-col>
+        <p>CA disponnibles : {{user.conge.CA}}</p>   
+      </b-col>
+      <b-col>
+        <p>RTT disponnibles : {{user.conge.RTT}}</p>
+      </b-col>
+    </b-row>
   </b-container>
   <b-form-group id="totalHeureGroup"
                     label="Nombre d'heure par semaine :"
@@ -285,7 +124,8 @@ export default {
         { text: "Présent", value: "present" },
         { text: "CA", value: "CA" },
         { text: "RTT", value: "RTT" }
-      ]
+      ],
+      days: ["lundi", "mardi", "mercredi", "jeudi", "vendredi"]
     };
   },
   methods: {
